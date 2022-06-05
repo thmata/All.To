@@ -18,6 +18,7 @@ import Auth from './src/Screens/Auth'
 import Step1 from './src/Screens/Steps/1'
 import Step2 from './src/Screens/Steps/step2/Step2'
 import Step3 from './src/Screens/Steps/step3/Step3'
+import Step4 from './src/Screens/Steps/step4/Step4'
 import Step5 from './src/Screens/Steps/step5/Step5'
 
 export default function App() {
@@ -41,6 +42,7 @@ export default function App() {
           <Stack.Screen name="Step1" component={Step1} />
           <Stack.Screen name="Step2" component={Step2} />
           <Stack.Screen name="Step3" component={Step3} />
+          <Stack.Screen name="Step4" component={Step4} />
           <Stack.Screen name="Step5" component={Step5} />
           <Stack.Screen name="Dashboard" component={Dashboard} />
         </Stack.Navigator>
