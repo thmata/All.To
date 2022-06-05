@@ -19,6 +19,7 @@ import Step1 from './src/Screens/Steps/1'
 import Step2 from './src/Screens/Steps/step2/Step2'
 import Step3 from './src/Screens/Steps/step3/Step3'
 import Step5 from './src/Screens/Steps/step5/Step5'
+import Step6 from './src/Screens/Steps/step6/Step6'
 
 export default function App() {
   let [fontsLoaded] = useFonts({
@@ -42,6 +43,7 @@ export default function App() {
           <Stack.Screen name="Step2" component={Step2} />
           <Stack.Screen name="Step3" component={Step3} />
           <Stack.Screen name="Step5" component={Step5} />
+          <Stack.Screen name="Step6" component={Step6} />
           <Stack.Screen name="Dashboard" component={Dashboard} />
         </Stack.Navigator>
       </NavigationContainer>

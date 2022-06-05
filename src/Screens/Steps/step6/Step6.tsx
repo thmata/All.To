@@ -1,37 +1,35 @@
 import React from 'react';
-import { Text, View, StyleSheet, Pressable, TouchableHighlight} from 'react-native';
+import { Text, View, StyleSheet, Pressable, TouchableOpacity} from 'react-native';
 import ComponentTextInput from '../../../Components/TextInput/Index';
 import { BotaoView } from '../step2/style';
-import { Container } from './style'
+import { Container } from './style';
 
 
 
 export default function Step3({ route, navigation }: any){
-    const { type } = route.params
+    const { type } = route.params;
     return(<>
         <Container>
-            <Text style={{marginLeft:15, fontWeight: 'bold', fontSize: 24}}>Qual é {type === 'bike' ? 'o sua bike' : 'o seu carro'}?</Text>
-            <ComponentTextInput placeholder={'Insira o ano do seu carro'}/>
-            <ComponentTextInput placeholder={'Selecione o modelo'}/>
+            <Text style={{marginLeft:15, fontWeight: 'bold', fontSize: 24}}>Qual é o seu CPF?</Text>
+            <ComponentTextInput placeholder={'Digite seu CPF'}/>
             <BotaoView>
-                <TouchableHighlight
+                <TouchableOpacity
                   onPress={() =>
-                    navigation.push('Step4', { type })
+                    navigation.push('Step7', { type })
                   }
                   activeOpacity={1}
-                  style={styles.button1}
-                  underlayColor='#000'>
+                  style={styles.button1}>
                     <Text>Pular etapa</Text>
-                </TouchableHighlight>
-                <TouchableHighlight
+                </TouchableOpacity>
+                <TouchableOpacity
                   onPress={() =>
-                    navigation.push('Step4', { type })
+                    navigation.push('Step7', { type })
                   }
-                  underlayColor='#000'>
+                >
                     <View style={styles.button2}>
                       <Text style={{color:'#fff'}}>Enviar</Text>
                     </View>
-                </TouchableHighlight>
+                </TouchableOpacity>
             </BotaoView>
         </Container>
         </>
