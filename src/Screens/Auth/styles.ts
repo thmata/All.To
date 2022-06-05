@@ -55,7 +55,7 @@ export const Pressable = styled.TouchableOpacity`
     height: 56px;
     background-color: #FFF;
     border-radius: 5px;
-    margin-top: 30px;
+    margin-top: 60px;
     justify-content: center;
     align-items: center;
 `;

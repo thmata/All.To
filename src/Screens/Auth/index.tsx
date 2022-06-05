@@ -17,14 +17,9 @@ export default function Auth({ navigation }: any) {
                 <Body>
                     <Span>Faça sua consulta <Text style={{ fontWeight: 'bold' }}>rápida</Text> com a gente</Span>
                     <Pressable onPress={() =>
-                        navigation.push('Dashboard')
+                        navigation.push('Step1')
                     }>
                         <Text>COTAÇÃO RÁPIDA</Text>
-                    </Pressable>
-                    <Pressable onPress={() =>
-                        navigation.push('Dashboard')
-                    } style={{ backgroundColor: '#C1EDFF', marginTop: 10 }}>
-                        <Text>ENTRAR COM O GOOGLE</Text>
                     </Pressable>
                 </Body>
             </SafeAreaView>
