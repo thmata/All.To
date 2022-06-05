@@ -21,7 +21,7 @@ import { Container,
          Perfil,
          Chat
          } from './styles'
-export default function Dashboard({ navigation }){
+export default function Dashboard({ navigation }: any){
     return(
         <Container>
             <Header>   
@@ -57,8 +57,6 @@ export default function Dashboard({ navigation }){
                     price={'R$ 73,21'}
                     reembolso={'R$ 4800,00'}
                     />
-                    <HighlightCard />
-                    <HighlightCard />
                 </Cards>
             </ScrollViewStyle>
             <NavigationBar>

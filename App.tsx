@@ -15,6 +15,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import Dashboard from './src/Screens/Dashboard'
 import Auth from './src/Screens/Auth'
+import Step1 from './src/Screens/Steps/1'
 
 export default function App() {
   let [fontsLoaded] = useFonts({
@@ -34,6 +35,7 @@ export default function App() {
       <NavigationContainer>
         <Stack.Navigator screenOptions={{ headerShown: false }} initialRouteName='Auth'>
           <Stack.Screen name="Auth" component={Auth} />
+          <Stack.Screen name="Step1" component={Step1} />
           <Stack.Screen name="Dashboard" component={Dashboard} />
         </Stack.Navigator>
       </NavigationContainer>
