@@ -1,17 +1,33 @@
 import React from 'react';
-import {View, Text, StyleSheet, SafeAreaView} from 'react-native';
-import { HighlightCard } from '../../Components/HighlightCard';
+import {View, Text, StyleSheet, SafeAreaView } from 'react-native';
+import { NativeStackScreenProps } from '@react-navigation/native-stack'
 
-import { Container, Header, Title } from './styles'
-export default function Auth(){
+import { Container, Header, Title, Brand, BrandImg, Body, Span, Pressable } from './styles'
+export default function Auth({ navigation }) {
     return(
         <Container>
             <SafeAreaView style={{flex: 1}}>
                 <Header>
+                    <Brand>
+                        <BrandImg source={require('./../../assets/brand.png')}/>
+                    </Brand>
                     <Title>
-                        O SEGURO COM TUDO PARA VOCÊ
+                        O SEGURO COM <Text style={{ fontWeight: 'bold' }}>TUDO PARA</Text> VOCÊ
                     </Title>
                 </Header>
+                <Body>
+                    <Span>Faça sua consulta <Text style={{ fontWeight: 'bold' }}>rápida</Text> com a gente</Span>
+                    <Pressable onPress={() =>
+                        navigation.push('Dashboard')
+                    }>
+                        <Text>COTAÇÃO RÁPIDA</Text>
+                    </Pressable>
+                    <Pressable onPress={() =>
+                        navigation.push('Dashboard')
+                    } style={{ backgroundColor: '#C1EDFF', marginTop: 10 }}>
+                        <Text>ENTRAR COM O GOOGLE</Text>
+                    </Pressable>
+                </Body>
             </SafeAreaView>
         </Container>
     )

@@ -30,15 +30,15 @@ export function HighlightCard(){
             </Header>
                 <IconsBar>
                             <Border>
-                                <Ionicons name="location-sharp" size={50} color="green" />
+                                <Ionicons name="location-sharp" size={50} color="#FFF" />
                                 <Legenda>Rastrear</Legenda>
                             </Border>
                             <Border>
-                                <Ionicons name="alert-circle" size={50} color="green" />
+                                <Ionicons name="alert-circle" size={50} color="#FFF" />
                                 <Legenda>Acionar</Legenda>
                             </Border>
                             <Border>
-                                <Ionicons name="wallet-sharp" size={50} color="green" />
+                                <Ionicons name="wallet-sharp" size={50} color="#FFF" />
                                 <Legenda>Finanças</Legenda>
                             </Border>
                 </IconsBar>

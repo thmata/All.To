@@ -39,7 +39,7 @@ export const SubPriceTitle = styled.Text`
     font-size: 12px;
 `;
 export const Amount = styled.Text`
-    font-family: ${({theme}) => theme.fonts.medium};
+    font-family: ${({ theme }) => theme.fonts.medium};
     font-size: ${RFValue(32)}px;
     margin-top: 38px;
     color: #000000;
@@ -62,11 +62,14 @@ export const IconsBar = styled.View`
 export const Border = styled.View`
     border-radius: 10px;
     border: 1px solid;
-    padding: 10px;
+    padding: 10px 20px 10px 20px;
     align-items: center;
+    border-color: #DADADA;
+    background-color: #17468C;
 `;
 
 export const Legenda = styled.Text`
     font-size: 10px;
     font-weight: bold;
+    color: #FFFFFF;
 `;

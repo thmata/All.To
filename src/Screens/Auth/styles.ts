@@ -10,16 +10,52 @@ export const Container = styled.View`
 
 export const Header = styled.View`
     width: 100%;
-    height: ${RFPercentage(42)}px;
+    height: 50%;
     background-color: ${({ theme }) => theme.colors.primary};
-    justify-content: center;
     align-items: center;
-    flex-direction: row;
-    z-index: -1;
-    position: absolute;
+    flex-direction: column;
 `;
 
 export const Title = styled.Text`
-    font-size: ${RFValue(20)}px;
-    width: 70%;
+    font-size: 38px;
+    width: 80%;
+    text-align: center;
+    color: #FFF;
+    font-weight: 300;
+`;
+
+export const Brand = styled.View`   
+    margin-top: ${getStatusBarHeight()}px;
+    margin-bottom: 80px;
+`;
+
+export const BrandImg = styled.Image`
+    flex: 1;
+    max-width: 150px;
+    max-height: 150px;
+    resize-mode: contain;
+`;
+
+export const Body = styled.View`
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+`;
+
+export const Span = styled.Text`
+    font-size: ${RFValue(16)}px;
+    color: #FFF;
+    font-weight: 300;
+    width: 60%;
+    text-align: center;
+`
+
+export const Pressable = styled.TouchableOpacity`
+    width: 80%;
+    height: 56px;
+    background-color: #FFF;
+    border-radius: 5px;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
 `;

@@ -1,9 +1,9 @@
 import React from 'react';
-import {View, Text, StyleSheet, ScrollView} from 'react-native';
+import {TouchableOpacity} from 'react-native';
 import { HighlightCard } from '../../Components/HighlightCard';
 
 import { Container, Header, UserInfo, UserPhoto, User, UserGreetings, UserName, UserWrapper, Icon, Cards, ScrollViewStyle } from './styles'
-export default function Dashboard(){
+export default function Dashboard({ navigation }) {
     return(
         <Container>
             <Header>   
@@ -15,11 +15,23 @@ export default function Dashboard(){
                                 <UserName>João Pedro </UserName>
                             </User>
                     </UserInfo>
-                    <Icon name="power"/>
+                    <TouchableOpacity onPress={() => {
+                        navigation.navigate('Auth')
+                    }}>
+                        <Icon name="power"/>
+                    </TouchableOpacity>
                 </UserWrapper>  
             </Header>
             <ScrollViewStyle>
                 <Cards>
+                    <HighlightCard/>
+                    <HighlightCard/>
+                    <HighlightCard/>
+                    <HighlightCard/>
+                    <HighlightCard/>
+                    <HighlightCard/>
+                    <HighlightCard/>
+                    <HighlightCard/>
                     <HighlightCard/>
                     <HighlightCard/>
                 </Cards>
