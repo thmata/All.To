@@ -21,6 +21,7 @@ import Step3 from './src/Screens/Steps/step3/Step3'
 import Step4 from './src/Screens/Steps/step4/Step4'
 import Step5 from './src/Screens/Steps/step5/Step5'
 import Step6 from './src/Screens/Steps/step6/Step6'
+import Step8 from './src/Screens/Steps/step8/Step8'
 import Step7 from './src/Screens/Steps/step7/Step7'
 
 export default function App() {
@@ -48,6 +49,7 @@ export default function App() {
           <Stack.Screen name="Step5" component={Step5} />
           <Stack.Screen name="Step6" component={Step6} />
           <Stack.Screen name="Step7" component={Step7} />
+          <Stack.Screen name="Step8" component={Step8} />
           <Stack.Screen name="Dashboard" component={Dashboard} />
         </Stack.Navigator>
       </NavigationContainer>
