@@ -7,6 +7,7 @@ import { Text, View, StyleSheet, Pressable, TouchableHighlight} from 'react-nati
 
 export default function Step2({ route, navigation }: any){
     const { type } = route.params;
+
     if (['bike'].includes(type)) {
       navigation.push('Step3', { type });
     }
@@ -14,7 +15,7 @@ export default function Step2({ route, navigation }: any){
     return(<> 
         <Headerr/>
         <Container>
-            <Texto> Qual é seu carro?</Texto>
+            <Texto>Qual a placa do seu carro?</Texto>
             <ComponentTextInput placeholder={'Insira a placa do carro'}/>
             <BotaoView>
               <TouchableHighlight
