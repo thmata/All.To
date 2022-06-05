@@ -39,7 +39,7 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <NavigationContainer>
-        <Stack.Navigator screenOptions={{ headerShown: false }} initialRouteName='Step7'>
+        <Stack.Navigator screenOptions={{ headerShown: false }} initialRouteName='Auth'>
           <Stack.Screen name="Auth" component={Auth} />
           <Stack.Screen name="Step1" component={Step1} />
           <Stack.Screen name="Step2" component={Step2} />
