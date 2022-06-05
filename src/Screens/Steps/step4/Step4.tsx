@@ -3,7 +3,8 @@ import { Text, View, StyleSheet, Pressable, TouchableHighlight} from 'react-nati
 import SimpleSelectButton from 'react-native-simple-select-button';
 import { Container, BotaoView } from './style'
 
-export default function Step4(){
+export default function Step4({ route, navigation }: any){
+    const { type } = route.params
     return(
         <Container>
                 <Text style={{marginLeft:15, fontWeight: 'bold', fontSize: 24}}>Como você usa o carro</Text>
@@ -93,6 +94,9 @@ export default function Step4(){
                             <Text>Pular etapa</Text>
                     </TouchableHighlight>
                     <TouchableHighlight
+                        onPress={() =>
+                          navigation.push('Step5', { type })
+                        }
                         underlayColor='#000'>
                             <View style={styles.button2}>
                             <Text style={{color:'#fff'}}>Enviar</Text>
