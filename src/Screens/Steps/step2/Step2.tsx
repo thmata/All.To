@@ -3,15 +3,18 @@ import Headerr from '../../../Components/Header/index'
 import ComponentTextInput from '../../../Components/TextInput/Index';
 import { Container, Texto, BotaoView  } from './style'
 import { Text, View, StyleSheet, Pressable, TouchableHighlight} from 'react-native';
-import { Ionicons } from '@expo/vector-icons'
-import NextIcon from '../../../Components/NextIcon';
 
 
-export default function Step2({ navigation }: any){
+export default function Step2({ route, navigation }: any){
+    const { type } = route.params;
+    if (['bike'].includes(type)) {
+      navigation.push('Step3', { type });
+    }
+ 
     return(<> 
         <Headerr/>
         <Container>
-            <Texto> Qual é seu carro? </Texto>
+            <Texto> Qual é seu carro?</Texto>
             <ComponentTextInput placeholder={'Insira a placa do carro'}/>
             <BotaoView>
               <TouchableHighlight
