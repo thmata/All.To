@@ -11,9 +11,10 @@ import { useFonts,
 import theme from './src/global/styles/theme'
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { enableScreens } from 'react-native-screens';
+
 
 import Dashboard from './src/Screens/Dashboard'
+import Auth from './src/Screens/Auth'
 
 export default function App() {
   let [fontsLoaded] = useFonts({
@@ -31,7 +32,8 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <NavigationContainer>
-        <Stack.Navigator screenOptions={{ headerShown: false }}>
+        <Stack.Navigator screenOptions={{ headerShown: false }} initialRouteName='Auth'>
+          <Stack.Screen name="Auth" component={Auth} />
           <Stack.Screen name="Dashboard" component={Dashboard} />
         </Stack.Navigator>
       </NavigationContainer>
