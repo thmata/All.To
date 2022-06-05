@@ -3,7 +3,7 @@ import {View, Text, StyleSheet} from 'react-native';
 import { HighlightCard } from '../../Components/HighlightCard';
 
 import { Container, Header, UserInfo, UserPhoto, User, UserGreetings, UserName, UserWrapper, Icon } from './styles'
-export function Dashboard(){
+export default function Dashboard(){
     return(
         <Container>
             <Header>   

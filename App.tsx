@@ -9,8 +9,11 @@ import { useFonts,
 } from '@expo-google-fonts/poppins'
 
 import theme from './src/global/styles/theme'
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { enableScreens } from 'react-native-screens';
 
-import { Dashboard } from './src/Screens/Dashboard'
+import Dashboard from './src/Screens/Dashboard'
 
 export default function App() {
   let [fontsLoaded] = useFonts({
@@ -23,9 +26,15 @@ export default function App() {
     return <AppLoading/>
   }
 
+  const Stack = createNativeStackNavigator();
+
   return (
     <ThemeProvider theme={theme}>
-      <Dashboard/>
+      <NavigationContainer>
+        <Stack.Navigator screenOptions={{ headerShown: false }}>
+          <Stack.Screen name="Dashboard" component={Dashboard} />
+        </Stack.Navigator>
+      </NavigationContainer>
     </ThemeProvider>
   );
 }
