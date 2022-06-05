@@ -17,16 +17,16 @@ import { Container,
      Border,
      Legenda } from './style'
 
-export function HighlightCard(){
+export function HighlightCard({ title, brand, placa, image, price, reembolso}: any){
     return(
         <Container>
             <Header>
                 <Left>
-                    <Title>Golf Sportf</Title>
-                    <SubTitle>VOLKSWAGEN</SubTitle>
-                    <SubTitle>PDF-2342</SubTitle>
+                    <Title>{title }</Title>
+                    <SubTitle>{brand}</SubTitle>
+                    <SubTitle>{placa}</SubTitle>
                 </Left>
-                <Icon source={require('./assets/car.png')}/>
+                <Icon source={image}/>
             </Header>
                 <IconsBar>
                             <Border>
@@ -44,12 +44,12 @@ export function HighlightCard(){
                 </IconsBar>
             <Footer>
                 <Parcela>
-                    <Price>R$ 73,21</Price>
+                    <Price>{price}</Price>
                     <SubPriceTitle>Parcela</SubPriceTitle>
                     <LastTransation>Paga</LastTransation>
                 </Parcela>
                 <Reembolso>
-                    <Price>R$ 4800,00</Price>
+                    <Price>{reembolso}</Price>
                     <SubPriceTitle>Reembolso</SubPriceTitle>
                     <LastTransation>Ativo</LastTransation>
                 </Reembolso>

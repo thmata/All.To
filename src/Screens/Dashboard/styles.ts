@@ -1,6 +1,6 @@
 import styled from 'styled-components/native'
 import { RFPercentage, RFValue } from 'react-native-responsive-fontsize'
-import { Feather } from '@expo/vector-icons'
+import { Feather, Entypo, MaterialCommunityIcons } from '@expo/vector-icons'
 import { getStatusBarHeight } from 'react-native-status-bar-height';
 
 export const Container = styled.View`
@@ -30,6 +30,7 @@ export const UserWrapper = styled.View`
     margin-top: -150px;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 `;
 
 export const UserInfo = styled.View`
@@ -62,4 +63,33 @@ export const Icon = styled(Feather)`
 
 export const Cards = styled.View`
     align-items: center;
+`;
+
+export const NavigationBar = styled.View`
+    width: 100%;
+    height: 62px;
+    background-color: #fff;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 40px;
+    align-items: center;
+    border-top-width: 1px;
+    border-top-color: 'black';
+`;
+export const Leftt = styled.Text`
+    align-items: center;
+`;
+export const Center = styled.Text`
+    flex-direction: row;
+`;
+export const Right = styled.Text``;
+
+export const Menu = styled(Entypo)`
+    font-size: 34px;
+`;
+export const Perfil = styled(MaterialCommunityIcons)`
+    font-size: 40px;
+`;
+export const Chat = styled(Entypo)`
+    font-size: 34px;
 `;
