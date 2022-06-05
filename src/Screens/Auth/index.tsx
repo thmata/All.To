@@ -1,9 +1,8 @@
 import React from 'react';
-import {View, Text, StyleSheet, SafeAreaView } from 'react-native';
-import { NativeStackScreenProps } from '@react-navigation/native-stack'
+import { Text, SafeAreaView } from 'react-native';
 
 import { Container, Header, Title, Brand, BrandImg, Body, Span, Pressable } from './styles'
-export default function Auth({ navigation }) {
+export default function Auth({ navigation }: any) {
     return(
         <Container>
             <SafeAreaView style={{flex: 1}}>
