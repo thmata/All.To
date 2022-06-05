@@ -9,7 +9,7 @@ export default function Auth({ navigation }) {
             <SafeAreaView style={{flex: 1}}>
                 <Header>
                     <Brand>
-                        <BrandImg source={require('./../../assets/brand.png')}/>
+                        <BrandImg source={require('./../../assets/white-brand.png')}/>
                     </Brand>
                     <Title>
                         O SEGURO COM <Text style={{ fontWeight: 'bold' }}>TUDO PARA</Text> VOCÊ
