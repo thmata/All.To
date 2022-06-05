@@ -1,6 +1,7 @@
 import styled from 'styled-components/native'
 import { RFPercentage, RFValue } from 'react-native-responsive-fontsize'
 import { Feather } from '@expo/vector-icons'
+import { getStatusBarHeight } from 'react-native-status-bar-height';
 
 export const Container = styled.View`
     flex: 1;
@@ -19,16 +20,14 @@ export const Header = styled.View`
 export const UserWrapper = styled.View`
     width: 100%;
     padding: 0 24px;
+    margin-top: -150px;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
 `;
 
 export const UserInfo = styled.View`
     flex-direction: row;
     align-items: center;
-
-
 `;
 export const UserPhoto = styled.Image`
     width: ${RFValue(48)}px;
@@ -52,4 +51,8 @@ export const UserName = styled.Text`
 export const Icon = styled(Feather)`
     color: white;
     font-size: ${RFValue(20)}px;
+`;
+
+export const Cards = styled.View`
+    align-items: center;
 `;

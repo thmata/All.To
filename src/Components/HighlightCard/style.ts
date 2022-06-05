@@ -9,6 +9,8 @@ export const Container = styled.View`
     padding: 19px 23px;
     padding-bottom: ${RFValue(42)}px;
     background-color: #FFFF;
+    border-radius: 10px;
+    margin-top: 50px;
 `;
 export const Header = styled.View`
     flex-direction: row;
@@ -22,13 +24,49 @@ export const Title = styled.Text`
 export const SubTitle = styled.Text`
     color: #969CB2
 `;
-export const Icon = styled.Image``;
-export const Footer = styled.View``;
+export const Parcela = styled.View``;
+export const Price = styled.Text`
+    color: #363F5F;
+    font-size: 19px;
+`;
+export const Reembolso = styled.View``;
+export const Footer = styled.View`
+    flex-direction: row;
+    justify-content: space-between;
+`;
+export const SubPriceTitle = styled.Text`
+    color: #969CB2;
+    font-size: 12px;
+`;
 export const Amount = styled.Text`
     font-family: ${({theme}) => theme.fonts.medium};
     font-size: ${RFValue(32)}px;
     margin-top: 38px;
     color: #000000;
-
 `;
-export const LastTransation = styled.Text``;
+export const LastTransation = styled.Text`
+    color: green;
+    font-weight: bold;
+    font-size: 12px;
+`;
+
+export const Icon = styled.Image``;
+
+export const IconsBar = styled.View`
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+`;
+
+export const Border = styled.View`
+    border-radius: 10px;
+    border: 1px solid;
+    padding: 10px;
+    align-items: center;
+`;
+
+export const Legenda = styled.Text`
+    font-size: 10px;
+    font-weight: bold;
+`;

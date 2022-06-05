@@ -2,7 +2,7 @@ import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import { HighlightCard } from '../../Components/HighlightCard';
 
-import { Container, Header, UserInfo, UserPhoto, User, UserGreetings, UserName, UserWrapper, Icon } from './styles'
+import { Container, Header, UserInfo, UserPhoto, User, UserGreetings, UserName, UserWrapper, Icon, Cards } from './styles'
 export default function Dashboard(){
     return(
         <Container>
@@ -18,7 +18,10 @@ export default function Dashboard(){
                     <Icon name="power"/>
                 </UserWrapper>  
             </Header>
-            <HighlightCard/>
+            <Cards>
+                <HighlightCard/>
+                <HighlightCard/>
+            </Cards>
         </Container>
     )
 }

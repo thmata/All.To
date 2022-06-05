@@ -10,7 +10,6 @@ export function Welcome({title}: WeslcomeProps){
     return(
         <View>
             <Text> {title}</Text>
-
         </View>
     );
 }
