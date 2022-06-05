@@ -11,10 +11,17 @@ export const Container = styled.View`
 export const Header = styled.View`
     width: 100%;
     height: ${RFPercentage(42)}px;
-    background-color: ${({theme}) =>  theme.colors.primary};
+    background-color: ${({ theme }) => theme.colors.primary};
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    z-index: -1;
+    position: absolute;
+`;
+
+export const ScrollViewStyle = styled.ScrollView`
+    z-index: 1;
+    margin-top: 40%;
 `;
 
 export const UserWrapper = styled.View`
@@ -40,12 +47,12 @@ export const User = styled.View`
 export const UserGreetings = styled.Text`
     color: white;
     font-size: ${RFValue(15)}px;
-    font-family: ${({theme}) => theme.fonts.regular};
+    font-family: ${({ theme }) => theme.fonts.regular};
 `;
 export const UserName = styled.Text`
     color: white;
     font-size: ${RFValue(15)}px;
-    font-family: ${({theme}) => theme.fonts.bold};
+    font-family: ${({ theme }) => theme.fonts.bold};
 `;
 
 export const Icon = styled(Feather)`
