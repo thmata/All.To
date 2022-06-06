@@ -67,10 +67,10 @@ From your command line:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/thmata/FF-Hacka
+$ git clone https://github.com/thmata/All.To
 
 # Go into the repository
-$ cd FF-Hacka
+$ cd All.To
 
 # Install dependencies
 $ yarn install
