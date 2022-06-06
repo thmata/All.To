@@ -34,7 +34,7 @@
 ## :information_source: What's FF Hacka?
 
 Hackatons são eventos que envolvem tecnologia, inovação e muita criatividade. Seu nome vem da mistura de "HACK" (programar) e "MARATHON" (maratona), ambas de língua inglesa. Ou seja, um evento onde os inscritos reúnem-se em grupos e trabalham para idealizar, desenvolver e apresentar projetos, ou soluções, que possam contribuir no dia a dia de empresas e pessoas.
-O presente evento é promovido pela empresa Fairfax Brasil Seguros Corporativos S.A,
+O presente evento é promovido pela empresa Fairfax Brasil Seguros Corporativos S.A.
 
 ## 💻 Project
 
