@@ -13,5 +13,10 @@ export const BlueHeader = styled.View`
     position: absolute;
 `;
 
-export const HeaderText = styled.Text`
+export const HeaderText = styled.Image`
+    margin-top: -120px
+    flex: 1;
+    max-width: 150px;
+    max-height: 150px;
+    resize-mode: contain;
 `;

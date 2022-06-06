@@ -23,7 +23,7 @@ export const Title = styled.Text`
     font-weight: bold;
 `;
 export const SubTitle = styled.Text`
-    color: #969CB2
+    color: #969CB2;
     width: ${RFValue(150)}px;
 `;
 
