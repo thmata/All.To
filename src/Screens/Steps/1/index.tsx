@@ -1,6 +1,6 @@
 import React from 'react';
-import {TouchableOpacity} from 'react-native';
-import { HighlightCard } from './Components/HighlightCard';
+import { TouchableOpacity } from 'react-native';
+import { HighlightCard } from './Components/';
 
 import { Container, 
          Header, 

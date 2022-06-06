@@ -20,7 +20,7 @@ export default function Step7({ navigation, navigation: { goBack } }: any){
                     type="car"
                     title={'Argo HGT 1.8 16V Flez Auto'}
                     price={'R$ 75,99/mês'}
-                    desc={'Basic'}
+                    desc={'BASIC'}
                     image={require('../../../assets/car.png')}
                     list={[
                         'Cobretura contra roubos e furtos',

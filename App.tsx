@@ -22,6 +22,8 @@ import Step4 from './src/Screens/Steps/step4/Step4'
 import Step5 from './src/Screens/Steps/step5/Step5'
 import Step6 from './src/Screens/Steps/step6/Step6'
 import Step7 from './src/Screens/Steps/step7/Step7'
+import Step10 from './src/Screens/Steps/step10/Step10'
+
 
 export default function App() {
   let [fontsLoaded] = useFonts({
@@ -39,7 +41,7 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <NavigationContainer>
-        <Stack.Navigator screenOptions={{ headerShown: false }} initialRouteName='Step7'>
+        <Stack.Navigator screenOptions={{ headerShown: false }} initialRouteName='Step10'>
           <Stack.Screen name="Auth" component={Auth} />
           <Stack.Screen name="Step1" component={Step1} />
           <Stack.Screen name="Step2" component={Step2} />
@@ -48,6 +50,7 @@ export default function App() {
           <Stack.Screen name="Step5" component={Step5} />
           <Stack.Screen name="Step6" component={Step6} />
           <Stack.Screen name="Step7" component={Step7} />
+          <Stack.Screen name="Step10" component={Step10} />
           <Stack.Screen name="Dashboard" component={Dashboard} />
         </Stack.Navigator>
       </NavigationContainer>
