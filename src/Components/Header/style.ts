@@ -4,7 +4,7 @@ import { Feather, Entypo, MaterialCommunityIcons } from '@expo/vector-icons'
 
 export const BlueHeader = styled.View`
     width: 100%;
-    height: ${RFPercentage(42)}px;
+    height: 35%;
     background-color: ${({ theme }) => theme.colors.primary};
     justify-content: center;
     align-items: center;

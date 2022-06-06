@@ -40,7 +40,7 @@ export function HighlightCard({ navigation, type, title, desc, image, list, pric
             </PriceView>
             <Footer>
                 <Pressable onPress={() =>
-                    navigation.push('Step2', { type })
+                    navigation.push('Step8', { type })
                 }>
                     <Text style={{ color: '#FFF' }}>CONTRATAR SEGURO</Text>
                 </Pressable>
