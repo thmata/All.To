@@ -4,7 +4,7 @@ import styled from 'styled-components/native'
 export const Container = styled.View`
     margin-top: 80px;
     margin-bottom: 20px;
-    padding: 0 40px;
+    padding: 0 25px;
 `;
 
 export const Title = styled.Text`
@@ -30,4 +30,5 @@ export const ScrollViewStyle = styled.ScrollView`
     z-index: 1;
     display: flex;
     height: 100%;
+    width: 500px;
 `;

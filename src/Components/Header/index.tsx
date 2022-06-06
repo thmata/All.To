@@ -5,8 +5,7 @@ import { BlueHeader, HeaderText} from './style'
 export default function Headerr(){
     return(
         <BlueHeader>
-            <HeaderText>
-            </HeaderText>
+            <HeaderText source={require('../../assets/white-brand.png')}/>
         </BlueHeader>
     );
 }
