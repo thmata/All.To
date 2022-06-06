@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { Camera, CameraType } from 'expo-camera';
 
+import { Icon } from './style';
 
-export default function Step9({ navigation }: any){
+export default function Step9({ navigation, navigation: { goBack } }: any){
   const [hasPermission, setHasPermission] = useState(null);
   const [getPhotoStep, setPhonoStep] = useState(0);
 
@@ -43,6 +44,13 @@ export default function Step9({ navigation }: any){
       <Camera style={styles.camera} type={CameraType.back}>
         <View style={styles.buttonContainer}>
           <TouchableOpacity
+            style={styles.iconButton}
+            onPress={() => {
+              goBack()
+            }}>
+            <Icon name="arrow-back-outline"/>
+          </TouchableOpacity>
+          <TouchableOpacity
             style={styles.button}
             onPress={() => {
               setPhonoStep(getPhotoStep + 1);
@@ -74,7 +82,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   button: {
-    marginTop: '180%',
+    marginTop: '145%',
     backgroundColor: '#17468C',
     height: '10%',
     width: '80%',
@@ -88,4 +96,25 @@ const styles = StyleSheet.create({
     color: 'white',
     textTransform: 'uppercase',
   },
+  iconButton: {
+    marginTop: '20%',
+    backgroundColor: '#17468C',
+    height: 50,
+    width: 50,
+    borderRadius: 100,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  backIcon: {
+    display: 'flex',
+    marginTop: '20%',
+    marginLeft: '5%',
+    width: 50,
+    height: 50,
+    borderRadius: 100,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#17468C'
+  }
 });
