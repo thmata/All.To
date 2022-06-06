@@ -1,13 +1,21 @@
 import React from 'react'
-import { Container, Title, Icon } from './style'
+import { Container, Title, Icon, UserWrapper, Iconn } from './style'
 import Headerr from '../../../Components/Header/index'
-import { Text, View, StyleSheet, Pressable, TouchableHighlight} from 'react-native';
+import { Text, View, StyleSheet, Pressable, TouchableHighlight, TouchableOpacity} from 'react-native';
+import BackButton from '../../../Components/BackButton/BackButton';
 
 
-export default function Step10({ route, navigation }: any){
+export default function Step10({ navigation, navigation: { goBack } }: any){
     return(
         <> 
             <Headerr/>
+            <UserWrapper>    
+                    <TouchableOpacity onPress={() => {
+                        goBack()
+                    }}>
+                        <Iconn name="arrow-back-outline"/>
+                    </TouchableOpacity>
+              </UserWrapper> 
             <Container> 
             <Title>Parabéns, sua cobertura já está ativa! 🥳</Title>
             <Icon name="checkcircle"/>
