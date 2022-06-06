@@ -37,6 +37,8 @@ export default function App() {
     return <AppLoading/>
   }
 
+  console.disableYellowBox = true;
+
   const Stack = createNativeStackNavigator();
 
   return (
