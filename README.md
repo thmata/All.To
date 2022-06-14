@@ -45,6 +45,20 @@ All.To é um app da FairFax, com o intuito de oferecer as melhores cotações pa
 
 </h1>
 
+## :camera_flash: Images
+
+<table>
+  <tr>
+    <td valign="top"><img src="https://user-images.githubusercontent.com/85140172/173592880-360885ab-fb92-4943-bf95-076a8cc1e510.jpeg"/></td>
+	<td valign="top"><img src="https://user-images.githubusercontent.com/85140172/173593430-d79ce371-9c5e-424b-955d-6bc9a9915afe.jpeg"/></td>
+    <td valign="top"><img src="https://user-images.githubusercontent.com/85140172/173593175-e75bd984-e3b1-473f-97d1-c794dc637649.jpeg"/></td>
+	  <td valign="top"><img src="https://user-images.githubusercontent.com/85140172/173593630-851c98c3-2f7f-4305-9f70-e96b7443d938.jpeg"/></td>
+	  <td valign="top"><img src="https://user-images.githubusercontent.com/85140172/173594163-d8599389-6a71-47fd-bb6d-106f357f9a2d.jpeg"/></td>
+	<td valign="top"><img src="https://user-images.githubusercontent.com/85140172/173594300-7744a806-321d-42f2-9005-88cef0e00e86.jpeg"/></td>
+	  
+  </tr>
+</table>
+
 
 ## :rocket: Technologies
 
